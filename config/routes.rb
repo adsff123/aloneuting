@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root 'home#main'
   
   get 'home/index'
@@ -6,14 +7,19 @@ Rails.application.routes.draw do
   get 'home/uuuu'
   get 'home/login'
   get 'home/mypage'
-  get 'home/signup'
+  get 'home/sign_in'
   get 'home/teambuild'
   get 'home/teamlist'
   get 'home/qna'
   get 'home/contact'
+  get 'home/user_info'
+  get 'home/belong_team'
+  get 'home/team_member'
   
   get 'index' => 'home#index'
-  get 'signup' => 'home#signup'
+  get 'sign_in' => 'home#sign_in'
+  get 'mypage' => 'home#mypage'
+  get 'team_member' => 'home#team_member'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

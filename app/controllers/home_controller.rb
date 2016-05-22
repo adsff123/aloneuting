@@ -14,7 +14,10 @@ class HomeController < ApplicationController
   def mypage
   end
   
-  def signup
+  def sign_in
+    unless user_signed_in?
+     redirect_to "home/sign_in"
+     end
   end
   
   def teambuild
@@ -27,5 +30,14 @@ class HomeController < ApplicationController
   end
   
   def contact
+  end
+  
+  def user_info
+  end
+  
+  def belong_team
+  end
+  
+  def team_member
   end
 end

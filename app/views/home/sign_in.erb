@@ -50,8 +50,8 @@
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title"><strong>Uting~</strong></span>
           <div class="mdl-layout-spacer"></div>
-            <a href='/home/signup' style='color:black;'><i class=material-icons>account_circle</i><strong>회원가입</strong>&nbsp;&nbsp;&nbsp;</a>
-            <a href='/home/signup' style='color:black;'><i class=material-icons>vpn_key</i><strong>로그인</strong></a>
+            <a href='/home/sign_in' style='color:black;'><i class=material-icons>account_circle</i><strong>회원가입</strong>&nbsp;&nbsp;&nbsp;</a>
+            <a href='/home/sign_in' style='color:black;'><i class=material-icons>vpn_key</i><strong>로그인</strong></a>
         </div>
       </header>
       <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
@@ -73,14 +73,10 @@
       </div>
       
       <div style='margin-left:20%;'><!--여기서부터-->
-      <h1>Uting 이용방법</h1>
-      <li style='margin-top:20%; '>
-        <li>우측 상단의 회원가입 버튼을 눌러 가입합니다.</li>
-        <li>원하는 사람들과 팀을 만들고 간단한 어필을 해 주세요!</li>
-        <li>팀 목록에서 상대방을 검색하고 확인 버튼을 눌러 만남을 신청합니다.</li>
-        <li>상대방이 수락하면 매칭이 진행됩니다!</li>
-      </li>
-
+        <% = current_user.email %>
+        <h1>안녕하세요</h1>
+        <h2>멋쟁이 사자처럼 at 성균관대학교에서 만든</h2>
+        <h3>UTING입니다.</h3>
       </div><!--여기까지 내용물 넣을 칸-->
     </div>
     <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
