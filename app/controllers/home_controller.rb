@@ -22,4 +22,10 @@ class HomeController < ApplicationController
   
   def teamlist
   end
+  
+  def qna
+  end
+  
+  def contact
+  end
 end

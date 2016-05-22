@@ -9,8 +9,11 @@ Rails.application.routes.draw do
   get 'home/signup'
   get 'home/teambuild'
   get 'home/teamlist'
+  get 'home/qna'
+  get 'home/contact'
   
   get 'index' => 'home#index'
+  get 'signup' => 'home#signup'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
